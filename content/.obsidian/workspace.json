@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "about.md",
+                "file": "stories/خبر  متسلق الروابي.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "about"
+              "title": "خبر  متسلق الروابي"
             }
           }
         ]
@@ -185,9 +185,11 @@
   },
   "active": "166c7c184da5dfd7",
   "lastOpenFiles": [
+    "stories/MAX.png",
+    "about.md",
+    "stories/خبر  متسلق الروابي.md",
     "posts/أخبار مخترقي النظم.md",
     "posts/حين يملي عليك الحاسب أفعالك.md",
-    "about.md",
     "stories/مُقتفيات أثر أجنبية.md",
     "stories/ملكية-جافاسكريبت.md",
     "stories/مفاخرات-التقنية.md",
@@ -212,8 +214,6 @@
     "story/مُقتفيات أثر أجنبية.md",
     "story/ملكية-جافاسكريبت.md",
     "story/مقامة الشابكة الثالثة.md",
-    "story/مفاخرات-التقنية.md",
-    "story/لنكس في الاكسل.md",
     "story/Pasted image 20250910100800.png",
     "story/Pasted image 20250909102115.png",
     "story",

@@ -20,8 +20,23 @@
               "icon": "lucide-file",
               "title": "حين يملي عليك الحاسب أفعالك"
             }
+          },
+          {
+            "id": "19eaf335c56368a7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "حين يملي عليك الحاسب أفعالك.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "حين يملي عليك الحاسب أفعالك"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -164,10 +179,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "15bf7a57f49f06cc",
+  "active": "19eaf335c56368a7",
   "lastOpenFiles": [
-    "كتاب تاريخ ابن خلدون-الفصل السادس والثلاثون في أن كثرة الاختصارات المؤلفة في العلوم مخلة بالتعليم..md",
+    "Untitled.md",
     "حين يملي عليك الحاسب أفعالك.md",
+    "كتاب تاريخ ابن خلدون-الفصل السادس والثلاثون في أن كثرة الاختصارات المؤلفة في العلوم مخلة بالتعليم..md",
     "ملكية-جافاسكريبت.md",
     "Pasted image 20250909102115.png",
     "Pasted image 20250910100800.png",
