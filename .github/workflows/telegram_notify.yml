@@ -1,22 +1,62 @@
-name: Telegram Notify
+name: Telegram RSS Notify
 on:
   push:
-    branches: [ main ] # تأكد أن هذا هو اسم فرعك (Branch) الرئيسي
+    branches: [ main ] # تأكد أن هذا اسم فرعك الرئيسي
 
 jobs:
-  telegram:
+  notify:
     runs-on: ubuntu-latest
     steps:
-      - name: Telegram Notification
-        uses: appleboy/telegram-action@master
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
         with:
-          to: ${{ secrets.TELEGRAM_TO }}
-          token: ${{ secrets.TELEGRAM_TOKEN }}
-          format: html
-          message: |
-            <b>تم نشر مقال جديد في مقهى سيبريا! ☕️</b>
+          python-version: '3.x'
 
-            العنوان: «<b>${{ github.event.head_commit.message }}</b>»
+      - name: Install dependencies
+        run: pip install feedparser requests
 
-            للمطالعة، تفضلوا بزيارة الرابط:
-            https://cyberia-cafe.github.io
+      - name: Parse RSS and Send to Telegram
+        env:
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          TELEGRAM_TO: ${{ secrets.TELEGRAM_TO }}
+        run: |
+          python - <<EOF
+          import feedparser
+          import requests
+          import os
+
+          # قراءة ملف الـ RSS من جذر المستودع
+          feed = feedparser.parse('rss.xml')
+          
+          if feed.entries:
+              # جلب أحدث مقال (أول واحد في القائمة)
+              latest_entry = feed.entries[0]
+              title = latest_entry.title
+              link = latest_entry.link
+              
+              # تنسيق الرسالة بأسلوب مقهى سيبريا
+              message = f"<b>حديثٌ جديد في مقهى سيبريا! ☕️</b>\n\n"
+              message += f"«<b>{title}</b>»\n\n"
+              message += f"للمطالعة والاستزادة، تفضلوا بزيارة الرابط:\n{link}"
+              
+              token = os.getenv('TELEGRAM_TOKEN')
+              chat_id = os.getenv('TELEGRAM_TO')
+              url = f"https://api.telegram.org/bot{token}/sendMessage"
+              
+              payload = {
+                  'chat_id': chat_id,
+                  'text': message,
+                  'parse_mode': 'HTML'
+              }
+              
+              r = requests.post(url, data=payload)
+              if r.status_code == 200:
+                  print("✅ تم إرسال المقال بنجاح إلى تليجرام")
+              else:
+                  print(f"❌ فشل الإرسال: {r.text}")
+          else:
+              print("⚠️ لم يتم العثور على أي مقالات في ملف RSS")
+          EOF
