@@ -1,0 +1,40 @@
+@charset "UTF-8";
+:root {
+  --primary: #f58219;
+  --red: red;
+  --heading-color: #edede9;
+  --text-color: #eee;
+  --text-color-alt: #373fb3;
+  --bg-color: #1c1c1c;
+  --black: #212529;
+  --white: #fdfdfd;
+  --dark-grey: #343334;
+  --subtle-text: #777;
+  --subtle-links: #d6ccc2;
+  --light-grey: #ccc;
+  --lighter-gray: #f6f6f6;
+  --bg-white: #edf2f4;
+  --font-base: "Andada Pro", sans-serif;
+  --font-monospace: menlo, monaco, lucida console, liberation mono, dejavu sans mono, bitstream vera sans mono, courier new, monospace, serif;
+  --font-nav: "IBM Plex Sans Arabic", serif;
+  --font-title: "Aref Ruqaa", serif;
+  --font-headings: "IBM Plex Sans Arabic", serif;
+  --font-poem: "Amiri", "IBM Plex Sans Arabic";
+  --border-radius: 0.5rem;
+  /* ألوان النمط المظلم للنافذة */
+  --littlefoot-popover-bg: #1e1e1e;
+  /* لون خلفية النافذة */
+  --littlefoot-popover-color: #e0e0e0;
+  /* لون النص */
+  --littlefoot-button-bg: #333;
+  /* لون الزر قبل التحويم */
+  --littlefoot-button-color: #999;
+  /* لون رقم الزر */
+  --littlefoot-button-hover-bg: #555;
+  /* لون الزر عند التحويم */
+  --littlefoot-button-active-bg: #8c6a4c;
+  /* لون الزر عند الضغط (بني قهوة) */
+  /* ألوان الحدود والظل */
+  --popover-border-color: #444;
+  --popover-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}/*# sourceMappingURL=variables.css.map */

@@ -11,45 +11,16 @@
       <div>وَفِيْنَا مَقاماتٌ حِسانٌ وُجوهُهُم</div>
       <div>وَأَندِيَةٌ يَنتابُها القَولُ وَالفِعلُ</div>
     </div>
-    <a href="https://t.me/+yX8K-okJGctiZTg0" class="cta">انضم لسيبريا</a>
+    <div class="cta-row"><a href="https://t.me/+yX8K-okJGctiZTg0" class="cta">انضم لسيبريا</a>
+      <a href="https://t.me/+yX8K-okJGctiZTg0" class="cta about">ما مقهى سيبريا؟</a>
+    </div>
   </div>
 </section>
-
-<!-- المحتوى الحالي للصفحة الرئيسية -->
-<div class="row-content">
-  <div class="column column-half column-md-full" id="column-3">
-    <h2 id="heading-about-cyber" class="section-heading">ما مقهى سيبيريا</h2>
-    <div id="text-about-cyber" class="text-content equal">
-      مقهى سيبريا نادٍ من نوادي التقانة، لا يُسمع فيه غير الحديث عن الآلة، وقد جعلناه في كل أمرٍ من أمور التحسيب، من
-      نظمٍ
-      وأمنٍ وصناعةٍ وهلم جرًا؛ فمرّةً نشرح مفهومًا أُهمل ذكره أو لم يُفطن إلى ما تحته، ومرّةً نعرض للرائج الجديد وما
-      وراءه من
-      قصدٍ أو مكر، كما نقصّ قصصًا فيها الحكمة واللهو، ولا تخلو من عبرةٍ وعظةٍ، وكل ذلك بلسانٍ عربيٍّ فصيحٍ، نقيٍّ من
-      ركاكة
-      العجم، سليمٍ من سخافاتهم.
-      <div class="more">وسئل شيخ المقهى محمد بن الصرد: ماذا أريد بسيبيريا؟
-        فقال: وتعددت الأقوال في ذلك أيضًا،
-        فبعضهم قال: إنّها كناية عن العزلة؛ فالعارف بعلم الحاسب بعيدٌ عن سفاسف القوم، منعزل عنهم، اجتنبهم واجتنبوه،
-        فكأنّما
-        هو في أرض الصقيع القصيّة: سيبريا.
-        وقال آخرون: بل الأمر على ظاهره، وأنّ سيبيريا دمجٌ بين cyber وaria، فصارت cyberia؛ والسايبر معلوم، وأمّا الأريا
-        فهي
-        الأنشودة الفرديّة العالية، فأرادوا أنها أنشودة الشابكة ولحنها الصارخ.
-        ثم جاء نفر آخرون فقالوا: بل هي من cyber area، أي رقعة الشابكة وفضائها الرحب، ساحة يجتمع فيها أهل الآلة كما يجتمع
-        الناس في سوق أو نادٍ.
-
-        ثم قال: ولا أرى هذه الأقوال متعارضة، بل هي وجوه لمعنى واحد، يُتمّ بعضها بعضًا؛ فسيبيريا هي في آنٍ واحدٍ عزلةُ
-        العارف، وأنشودةُ الشابكة، ورقعتها.</div>
-      <span class="read-toggle">اقرأ المزيد</span>
-    </div>
-
-  </div>
-</div>
 
 
 <!-- قسم آخر المقالات -->
 <section class="latest-posts">
-  <h2>آخر ما نُشر</h2>
+  <h2>آخر المقالات </h2>
   <div class="posts-grid">
     {% set posts_section = get_section(path="posts/_index.md") %}
     {% for post in posts_section.pages | slice(end=3) %}
@@ -89,19 +60,53 @@
     {% endfor %}
   </div>
   <div class="view-all">
-    <a href="{{ config.base_url | safe }}/posts">زر الكناشة</a>
+    <a href="{{ config.base_url | safe }}/posts">انظر لكامل المقالات</a>
   </div>
 </section>
 
+<section class="latest-posts">
+  <h2>آخر القصص </h2>
+  <div class="posts-grid">
+    {% set posts_section = get_section(path="stories/_index.md") %}
+    {% for post in posts_section.pages | slice(end=3) %}
+    <div class="post-card">
+      <div class="post-header">
+        {% if post.date %}
+        <div class="meta">
+          <div class="date">
+            <span class="day">{{ post.date | date(format="%m") }}</span>
+            <span class="rest">{{ post.date | date(format="%d") }}</span>
+          </div>
+        </div>
+        {% endif %}
 
-<section id="contact-section" class="contact-section">
-  <h2 id="contact-us">تواصل معنا</h2>
-  <div class="contact-content">
-    <p>يسعكم التواصل معنا بهذه الوسائل:</p>
-    <ul class="contact-methods">
-      <li><a href="" class="telegram">قناة التيليغرام <i data-feather="send"></i></a></li>
-      <li><a href="" class="mail">البريد الرقمي <i data-feather="mail"></i></a></li>
-    </ul>
+        <div class="matter">
+          <h4 class="title">
+            <a href="{{ post.permalink | safe }}">{{ post.title }}</a>
+            {% if post.draft %}<span class="draft">(مسودة)</span>{% endif %}
+          </h4>
+          {% if post.description %}
+          <p class="description">{{ post.description }}</p>
+          {% endif %}
+        </div>
+        <div class="matter">
+
+          <ul>
+            {% if post.taxonomies is containing ("tags") %}
+            {% for tag in post.taxonomies["tags"] %}
+            <li><a href='{{ config.base_url | safe }}/tags/{{ tag | slugify }}'>{{ tag }}</a></li>
+            {% endfor %}
+
+            {% endif %}
+          </ul>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  <div class="view-all">
+    <a href="{{ config.base_url | safe }}/stories">انظر لكامل القصص</a>
   </div>
 </section>
+
 {% endblock content %}

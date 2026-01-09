@@ -20,4 +20,22 @@
   --font-headings: "IBM Plex Sans Arabic", serif;
   --font-poem: "Amiri", "IBM Plex Sans Arabic";
   --border-radius: 0.5rem;
+  /* ألوان النمط المظلم للنافذة */
+  --littlefoot-popover-bg: #1e1e1e;
+  /* لون خلفية النافذة */
+  --littlefoot-popover-color: #e0e0e0;
+  /* لون النص */
+  --littlefoot-button-bg: #333;
+  /* لون الزر قبل التحويم */
+  --littlefoot-button-color: #999;
+  /* لون رقم الزر */
+  --littlefoot-button-hover-bg: #555;
+  /* لون الزر عند التحويم */
+  --littlefoot-button-active-bg: #8c6a4c;
+  /* لون الزر عند الضغط (بني قهوة) */
+
+  /* ألوان الحدود والظل */
+  --popover-border-color: #444;
+  --popover-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+
 }

@@ -69,7 +69,7 @@ hr {
   border: 0;
   height: 1px;
   margin: 2rem 0;
-  background: var(--light-grey);
+  background: var(--primary);
 
   &.subtle {
     background: var(--black);
@@ -179,22 +179,40 @@ textarea {
       margin: 10px;
     }
 
-    .cta {
-      font-weight: bold;
-      border: 2px solid;
-      border-radius: 0.5rem;
-      display: block;
-      width: 100%;
-      position: relative;
-      z-index: 1;
-      backdrop-filter: blur(5px);
+    .cta-row {
+      display: flex;
+      gap: 5px;
 
-      &:hover {
-        background-color: var(--primary);
-        color: var(--text-color);
-        text-decoration: none;
+      .about {}
+
+      .cta {
+        font-weight: bold;
+        border: 2px solid;
+        border-radius: 0.5rem;
+        display: block;
+        width: 100%;
+        position: relative;
+        z-index: 1;
+        backdrop-filter: blur(5px);
+
+        &:hover {
+          background-color: var(--primary);
+          color: var(--text-color);
+          text-decoration: none;
+        }
+
+        &.about {
+          color: var(--text-color-alt);
+
+          &:hover {
+            background-color: var(--text-color-alt);
+            color: var(--text-color);
+            text-decoration: none;
+          }
+        }
       }
     }
+
   }
 
 }
@@ -442,4 +460,60 @@ figure {
     }
 
   }
+}
+
+
+
+/* تطبيق التنسيقات على النافذة */
+.littlefoot__popover {
+  background-color: var(--littlefoot-popover-bg) !important;
+  border: 1px solid var(--popover-border-color);
+  box-shadow: var(--popover-shadow);
+  border-radius: 8px;
+  direction: rtl;
+  /* للعربية */
+}
+
+/* تنسيق النص داخل النافذة */
+.littlefoot__content {
+  color: var(--littlefoot-popover-color) !important;
+  line-height: 1.6;
+  background-color: var(--littlefoot-popover-bg) !important;
+  font-family: var(--font-nav)
+}
+
+/* تنسيق الزر الصغير (الرقم) */
+.littlefoot__button {
+  background-color: var(--littlefoot-button-bg) !important;
+  color: var(--littlefoot-button-color) !important;
+  border: none !important;
+  transition: all 0.3s ease;
+}
+
+.littlefoot__button:hover {
+  background-color: var(--littlefoot-button-hover-bg) !important;
+  color: #fff !important;
+}
+
+/* جعل الرقم والنص في سطر واحد */
+.littlefoot__content .footnote-definition {
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+  /* المسافة بين الرقم والنص */
+}
+
+/* إضافة شرطة بعد الرقم ليصبح (1-) */
+.littlefoot__content .footnote-definition-label::after {
+  content: "- ";
+}
+
+/* إلغاء النزول لسطر جديد الذي يسببه وسم p */
+.littlefoot__content p {
+  display: inline;
+  margin: 0;
+}
+
+.littlefoot__tooltip {
+  background-color: var(--littlefoot-popover-bg) !important;
 }

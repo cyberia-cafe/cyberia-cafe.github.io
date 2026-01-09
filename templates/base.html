@@ -31,13 +31,13 @@
     {% endif -%}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     {% if config.extra.overflow_menu_links -%}
     <script src="/js/drop.js"></script>
     {% endif -%}
 
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">  -->
 
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">  -->
+    <link rel="stylesheet" href="https://unpkg.com/littlefoot/dist/littlefoot.css" />
     <link rel="stylesheet" href="{{ get_url(path='base.css',trailing_slash=false)|safe}}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -125,16 +125,18 @@
                 href="https://github.com/jimmyff/zola-inky">أنكي</a>.{% endif %}
         </p>
         <div id="footerlinks" class="footerlinks">
-            <a href="https://alzanad.github.io/ribat-altaqniyyah/">رباط الشابكة</a><br>
-            <a href="/webring">حلق الشابكة</a><br>
+            <div>تواصل معي ▼</div>
+            <a class="telegram" href="https://alzanad.github.io/ribat-altaqniyyah/">قناة المقهى <i
+                    data-feather="send"></i></a><br>
+            <a class="mail" href="/webring">mohammedno1@proton.me <i data-feather="mail"></i></a><br>
         </div>
         <div class="social">
             <ul>
                 {# Github #}
                 {% if config.extra.link_github_username -%}
                 <li>
-                    <a href="https://github.com/{{ config.extra.link_github_username }}" title="Github" rel="me"><i
-                            data-feather="github"></i> <span>غيث</span></a>
+                    <a href="https://github.com/{{ config.extra.link_github_username }}" title="Github" class="github"
+                        rel="me"><i data-feather="github"></i> <span>غيث</span></a>
                 </li>
                 {% endif -%}
 
@@ -188,15 +190,15 @@
                 {# telegram #}
                 {% if config.extra.link_telegram_username -%}
                 <li>
-                    <a href="https://t.me/@{{ config.extra.link_telegram_username }}" title="telegram" rel="me"><i
-                            data-feather="send"></i><span>المرسال</span></a>
+                    <a href="https://t.me/@{{ config.extra.link_telegram_username }}" title="telegram" class="telegram"
+                        rel="me"><i data-feather="send"></i><span>المرسال</span></a>
                 </li>
                 {% endif -%}
 
                 {# RSS feed #}
                 <li>
-                    <a href="{{ get_url(path='rss.xml',trailing_slash=false)|safe }}" title="{{config.title}}"><i
-                            data-feather="rss"></i><span>موجز</span></a>
+                    <a href="{{ get_url(path='rss.xml',trailing_slash=false)|safe }}" class="rss"
+                        title="{{config.title}}"><i data-feather="rss"></i><span>موجز</span></a>
                 </li>
             </ul>
         </div>
@@ -207,22 +209,33 @@
     {% block body_end -%}
     {% endblock body_end -%}
     <script src="/js/menu.js"></script>
-    <script>
+    <script src="https://unpkg.com/littlefoot/dist/littlefoot.js" type="application/javascript"></script>
+
+    <script type="application/javascript">
         document.addEventListener('DOMContentLoaded', function () {
-            const toggle = document.querySelector('#text-about-cyber .read-toggle');
-            const moreDiv = document.querySelector('#text-about-cyber .more');
+            // تحويل الكلاسات برمجياً لضمان الربط
+            document.querySelectorAll('.footnote-reference').forEach(function (el) {
+                el.classList.add('footnote-ref');
+            });
 
-            // أخفي النص الإضافي في البداية
-            moreDiv.style.display = 'none';
+            littlefoot.littlefoot({
+                activateOnHover: true,   // التفعيل بمجرد مرور الفأرة
+                hoverDelay: 250,         // تأخير بسيط (بالميلي ثانية) لئلا تفتح النوافذ صدفة
+                // إخبار المكتبة أين تجد محتوى الهامش في Zola
+                footnoteSelector: '.footnote-definition',
 
-            toggle.addEventListener('click', function () {
-                if (moreDiv.style.display === 'none') {
-                    moreDiv.style.display = 'block';
-                    toggle.textContent = 'إخفاء';
-                } else {
-                    moreDiv.style.display = 'none';
-                    toggle.textContent = 'اقرأ المزيد';
-                }
+                // تحديد نمط الروابط
+                anchorPattern: /(fn|footnote|ref|#)/gi,
+
+                // قالب الزر
+                buttonTemplate: `
+                <button
+                    aria-label="Footnote <% number %>"
+                    class="littlefoot__button"
+                    id="<% reference %>"
+                >
+                    <% number %>
+                </button>`
             });
         });
     </script>
