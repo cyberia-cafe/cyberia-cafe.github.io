@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "stories/خبر  متسلق الروابي.md",
+                "file": "stories/مفاخرات-التقنية.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "خبر  متسلق الروابي"
+              "title": "مفاخرات-التقنية"
             }
           }
         ]
@@ -185,14 +185,24 @@
   },
   "active": "166c7c184da5dfd7",
   "lastOpenFiles": [
+    "stories/1/index.md",
+    "stories/خبر متسلق الروابي/index.md",
+    "stories/خبر متسلق الروابي/MAX.png",
+    "stories/خبر متسلق الروابي",
+    "stories/مفاخرات-التقنية.md",
+    "stories/1/MAX.png",
+    "stories/1",
+    "stories/مجلد بدون عنوان/index.md",
     "stories/MAX.png",
-    "about.md",
+    "stories/مجلد بدون عنوان/MAX.png",
     "stories/خبر  متسلق الروابي.md",
+    "stories/مجلد بدون عنوان/خبر  متسلق الروابي.md",
+    "stories/مجلد بدون عنوان",
+    "about.md",
     "posts/أخبار مخترقي النظم.md",
     "posts/حين يملي عليك الحاسب أفعالك.md",
     "stories/مُقتفيات أثر أجنبية.md",
     "stories/ملكية-جافاسكريبت.md",
-    "stories/مفاخرات-التقنية.md",
     "stories/مقامة الشابكة الثالثة.md",
     "stories/لنكس في الاكسل.md",
     "stories/في زجر من يستعمل لغة العجم بعذر أن فيها معنى يريده.md",
@@ -211,9 +221,6 @@
     "stories/Pasted image 20250910100800.png",
     "stories/Pasted image 20250909102115.png",
     "stories",
-    "story/مُقتفيات أثر أجنبية.md",
-    "story/ملكية-جافاسكريبت.md",
-    "story/مقامة الشابكة الثالثة.md",
     "story/Pasted image 20250910100800.png",
     "story/Pasted image 20250909102115.png",
     "story",
