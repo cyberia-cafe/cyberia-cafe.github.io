@@ -36,14 +36,13 @@ h6 {
 }
 
 blockquote {
-  margin-left: 1rem;
-  font-style: italic;
-  font-size: 1.4rem;
-  font-family: Georgia, bitstream charter, serif;
-  border-left: 3px solid;
-  border-color: var(--light-grey);
-  color: var(--text-color-alt);
-  padding-left: 20px;
+  background-color: var(--black, #f9f9f9);
+  border-right: 5px solid var(--primary, #222);
+  border-left: none;
+  padding: 5px 25px 5px 15px;
+  margin: 1.5rem 0;
+  border-radius: 4px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, .05);
 }
 
 blockquote cite {
