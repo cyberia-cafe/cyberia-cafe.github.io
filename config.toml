@@ -23,9 +23,9 @@ taxonomies = [{ name = "tags", lang = "ar", rss = true },{ name = "authors", lan
 
 
 [markdown]
-# Whether to do syntax highlighting
-# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
-highlighting = true
+
+highlighting = "both" 
+render_emoji = true
 
 
 [slugify]
