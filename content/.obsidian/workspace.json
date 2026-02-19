@@ -39,12 +39,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/Untitled/Untitled 1.md",
+                "file": "posts/كيف تصمم موقعًا بأسوء طريقة تقدر عليها؟/index.md",
                 "mode": "source",
-                "source": true
+                "source": false
               },
               "icon": "lucide-file",
-              "title": "Untitled 1"
+              "title": "index"
             }
           }
         ],
@@ -212,8 +212,17 @@
   },
   "active": "2bb10effa1c013ab",
   "lastOpenFiles": [
-    "posts/كيف تصمم موقعًا بأسوء طريقة تقدر عليها؟/index.md",
+    "posts/مفاضلة بين موقع الصعاليك القديم والجديد/كتاب السطحيون ما تفعله شبكة الإنترنت بأدمغتنا PDF - نيكولاس كار.pdf",
+    "posts/مفاضلة بين موقع الصعاليك القديم والجديد/index.md",
+    "posts/مفاضلة بين موقع الصعاليك القديم والجديد/alsaaleak-old-header-sm.png",
+    "posts/مفاضلة بين موقع الصعاليك القديم والجديد/alsaaleak-old-header-lg.png",
+    "posts/مفاضلة بين موقع الصعاليك القديم والجديد/alsaaleak-header-sm.png",
+    "posts/مفاضلة بين موقع الصعاليك القديم والجديد/alsaaleak-header-lg.png",
+    "posts/مفاضلة بين موقع الصعاليك القديم والجديد/about-alsaaleak.png",
+    "posts/مفاضلة بين موقع الصعاليك القديم والجديد",
     "posts/Untitled/Untitled 1.md",
+    "posts/Untitled/index.md",
+    "posts/كيف تصمم موقعًا بأسوء طريقة تقدر عليها؟/index.md",
     "posts/Untitled/كتاب السطحيون ما تفعله شبكة الإنترنت بأدمغتنا PDF - نيكولاس كار.pdf",
     "posts/Untitled/‏لم يتم تأكيده 794713.crdownload",
     "posts/حين يملي عليك الحاسب أفعالك.md",
@@ -223,10 +232,6 @@
     "posts/كيف تصمم موقعًا بأسوء طريقة تقدر عليها؟/bad-footer.png",
     "posts/كيف تصمم موقعًا بأسوء طريقة تقدر عليها؟/bad-ux.png",
     "posts/Untitled/about-alsaaleak.png",
-    "posts/Untitled/alsaaleak-header-lg.png",
-    "posts/Untitled/alsaaleak-header-sm.png",
-    "posts/Untitled/alsaaleak-old-header-lg.png",
-    "posts/Untitled/alsaaleak-old-header-sm.png",
     "webring.md",
     "posts/Untitled",
     "Untitled.md",
@@ -252,9 +257,6 @@
     "stories/مجلد بدون عنوان",
     "about.md",
     "posts/أخبار مخترقي النظم.md",
-    "stories/مُقتفيات أثر أجنبية.md",
-    "stories/ملكية-جافاسكريبت.md",
-    "stories",
-    "story"
+    "stories"
   ]
 }
