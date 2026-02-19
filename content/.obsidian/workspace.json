@@ -20,8 +20,35 @@
               "icon": "lucide-file",
               "title": "قول لينيُس تورفالدُس أن الذكاء المصنوع جعجة بلا طحن"
             }
+          },
+          {
+            "id": "6ea846c7c4b7ab4b",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.11.7"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.11.7"
+            }
+          },
+          {
+            "id": "2bb10effa1c013ab",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "posts/Untitled/Untitled 1.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "Untitled 1"
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -183,38 +210,43 @@
       "bases:Create new base": false
     }
   },
-  "active": "166c7c184da5dfd7",
+  "active": "2bb10effa1c013ab",
   "lastOpenFiles": [
-    "posts/كيف تصمم موقعًا بأسوء طريقة تقدر عليها؟/bad-footer.png",
-    "posts/كيف تصمم موقعًا بأسوء طريقة تقدر عليها؟/bad-header.png",
-    "posts/كيف تصمم موقعًا بأسوء طريقة تقدر عليها؟/bad-ux.png",
     "posts/كيف تصمم موقعًا بأسوء طريقة تقدر عليها؟/index.md",
+    "posts/Untitled/Untitled 1.md",
+    "posts/Untitled/كتاب السطحيون ما تفعله شبكة الإنترنت بأدمغتنا PDF - نيكولاس كار.pdf",
+    "posts/Untitled/‏لم يتم تأكيده 794713.crdownload",
+    "posts/حين يملي عليك الحاسب أفعالك.md",
+    "posts/قول لينيُس تورفالدُس أن الذكاء المصنوع جعجة بلا طحن.md",
     "posts/كيف تصمم موقعًا بأسوء طريقة تقدر عليها؟/program-advice.png",
+    "posts/كيف تصمم موقعًا بأسوء طريقة تقدر عليها؟/bad-header.png",
+    "posts/كيف تصمم موقعًا بأسوء طريقة تقدر عليها؟/bad-footer.png",
+    "posts/كيف تصمم موقعًا بأسوء طريقة تقدر عليها؟/bad-ux.png",
+    "posts/Untitled/about-alsaaleak.png",
+    "posts/Untitled/alsaaleak-header-lg.png",
+    "posts/Untitled/alsaaleak-header-sm.png",
+    "posts/Untitled/alsaaleak-old-header-lg.png",
+    "posts/Untitled/alsaaleak-old-header-sm.png",
+    "webring.md",
+    "posts/Untitled",
+    "Untitled.md",
+    "search.md",
     "posts/كيف تصمم موقعًا بأسوء طريقة تقدر عليها؟/كيف تصمم موقعًا بأسوء طريقة تقدر عليها؟.md",
     "posts/كيف تصمم موقعًا بأسوء طريقة تقدر عليها؟",
     "posts/كيف تصمم موقع بأسوء طريقة تقدر عليها؟/كيف تصمم موقعًا بأسوء طريقة تقدر عليها؟.md",
     "posts/كيف تصمم موقعًا بأسوء طريقة تقدر عليها/كيف تصمم موقعًا بأسوء طريقة تقدر عليها؟.md",
     "posts/كيف تصمم موقعًا بأسوء طريقة تقدر عليها",
-    "Pasted image 20260208224037.png",
-    "Pasted image 20260208224020.png",
-    "Pasted image 20260208224001.png",
-    "لقطة شاشة من 2026-02-08 22-32-09.png",
-    "posts/قول لينيُس تورفالدُس أن الذكاء المصنوع جعجة بلا طحن.md",
     "_index.md",
     "ص160 - كتاب مجمع الأمثال - جعجعة ولا أرى طحنا - المكتبة الشاملة.md",
-    "posts/حين يملي عليك الحاسب أفعالك.md",
     "stories/خبر متسلق الروابي/index.md",
-    "stories/خبر متسلق الروابي/MAX.png",
     "stories/_index.md",
     "stories/سخافة مٌتفاصح.md",
     "stories/غلبة-الآلة-البشر.md",
     "stories/مفاخرات-التقنية.md",
     "stories/1/index.md",
     "stories/خبر متسلق الروابي",
-    "stories/1/MAX.png",
     "stories/1",
     "stories/مجلد بدون عنوان/index.md",
-    "stories/MAX.png",
     "stories/خبر  متسلق الروابي.md",
     "stories/مجلد بدون عنوان/خبر  متسلق الروابي.md",
     "stories/مجلد بدون عنوان",
@@ -222,12 +254,7 @@
     "posts/أخبار مخترقي النظم.md",
     "stories/مُقتفيات أثر أجنبية.md",
     "stories/ملكية-جافاسكريبت.md",
-    "stories/مقامة الشابكة الثالثة.md",
-    "stories/لنكس في الاكسل.md",
-    "stories/في زجر من يستعمل لغة العجم بعذر أن فيها معنى يريده.md",
-    "stories/رجال بلوط بن مقنع.md",
     "stories",
-    "story",
-    "posts (نسخ)"
+    "story"
   ]
 }
