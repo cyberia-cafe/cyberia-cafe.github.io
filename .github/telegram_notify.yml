@@ -1,22 +1,22 @@
-name: Telegram Notify
-on:
-  push:
-    branches: [ main ] # تأكد أن هذا هو اسم فرعك (Branch) الرئيسي
+# name: Telegram Notify
+# on:
+#   push:
+#     branches: [ main ] # تأكد أن هذا هو اسم فرعك (Branch) الرئيسي
 
-jobs:
-  telegram:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Telegram Notification
-        uses: appleboy/telegram-action@master
-        with:
-          to: ${{ secrets.TELEGRAM_TO }}
-          token: ${{ secrets.TELEGRAM_TOKEN }}
-          format: html
-          message: |
-            <b>تم نشر مقال جديد في مقهى سيبريا! ☕️</b>
+# jobs:
+#   telegram:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Telegram Notification
+#         uses: appleboy/telegram-action@master
+#         with:
+#           to: ${{ secrets.TELEGRAM_TO }}
+#           token: ${{ secrets.TELEGRAM_TOKEN }}
+#           format: html
+#           message: |
+#             <b>تم نشر مقال جديد في مقهى سيبريا! ☕️</b>
 
-            العنوان: «<b>${{ github.event.head_commit.message }}</b>»
+#             العنوان: «<b>${{ github.event.head_commit.message }}</b>»
 
-            للمطالعة، تفضلوا بزيارة الرابط:
-            https://cyberia-cafe.github.io
+#             للمطالعة، تفضلوا بزيارة الرابط:
+#             https://cyberia-cafe.github.io

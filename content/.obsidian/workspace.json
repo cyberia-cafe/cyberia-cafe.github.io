@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/قول لينيُس تورفالدُس أن الذكاء المصنوع جعجة بلا طحن.md",
+                "file": "posts/الهاوي الذي يحسب أنه صاحب الصنعة/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "قول لينيُس تورفالدُس أن الذكاء المصنوع جعجة بلا طحن"
+              "title": "index"
             }
           },
           {
@@ -47,8 +47,7 @@
               "title": "خبر الراجع الجديد بخُفّي حُنين"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -71,7 +70,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "مستكشف الملفات"
             }
           },
           {
@@ -201,22 +200,29 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "bases:Create new base": false
+      "switcher:إفتح الانتقال السريع": false,
+      "graph:إفتح العرض البياني": false,
+      "canvas:إنشاء لوحة بصرية جديدة": false,
+      "daily-notes:إفتح ملاحظة اليوم": false,
+      "templates:أدرج قالب": false,
+      "command-palette:إفتح لوحة الأوامر": false,
+      "bases:إنشاء قاعدة جديدة": false
     }
   },
-  "active": "2bb10effa1c013ab",
+  "active": "166c7c184da5dfd7",
   "lastOpenFiles": [
-    "stories/أخبار مخترقي النظم.md",
+    "posts/الهاوي الذي يحسب أنه صاحب الصنعة/alsaaleak-old-header-sm.png",
+    "posts/الهاوي الذي يحسب أنه صاحب الصنعة/index.md",
+    "posts/الهاوي الذي يحسب أنه صاحب الصنعة/alsaaleak-old-header-lg.png",
+    "posts/الهاوي الذي يحسب أنه صاحب الصنعة/alsaaleak-header-sm.png",
+    "posts/الهاوي الذي يحسب أنه صاحب الصنعة/alsaaleak-header-lg.png",
+    "posts/الهاوي الذي يحسب أنه صاحب الصنعة/about-alsaaleak.png",
+    "posts/قول لينيُس تورفالدُس أن الذكاء المصنوع جعجة بلا طحن.md",
+    "posts/الهاوي الذي يحسب أنه صاحب الصنعة",
     "stories/خبر الراجع الجديد بخُفّي حُنين.md",
+    "stories/أخبار مخترقي النظم.md",
     "stories/خبر متسلق الروابي/index.md",
     "posts/مفاضلة بين موقع الصعاليك القديم والجديد/index.md",
-    "posts/قول لينيُس تورفالدُس أن الذكاء المصنوع جعجة بلا طحن.md",
     "posts/كيف تصمم موقعًا بأسوء طريقة تقدر عليها؟/index.md",
     "posts/مفاضلة بين موقع الصعاليك القديم والجديد/كتاب السطحيون ما تفعله شبكة الإنترنت بأدمغتنا PDF - نيكولاس كار.pdf",
     "posts/مفاضلة بين موقع الصعاليك القديم والجديد/alsaaleak-old-header-sm.png",
@@ -230,11 +236,6 @@
     "posts/Untitled/كتاب السطحيون ما تفعله شبكة الإنترنت بأدمغتنا PDF - نيكولاس كار.pdf",
     "posts/Untitled/‏لم يتم تأكيده 794713.crdownload",
     "posts/حين يملي عليك الحاسب أفعالك.md",
-    "posts/كيف تصمم موقعًا بأسوء طريقة تقدر عليها؟/program-advice.png",
-    "posts/كيف تصمم موقعًا بأسوء طريقة تقدر عليها؟/bad-header.png",
-    "posts/كيف تصمم موقعًا بأسوء طريقة تقدر عليها؟/bad-footer.png",
-    "posts/كيف تصمم موقعًا بأسوء طريقة تقدر عليها؟/bad-ux.png",
-    "posts/Untitled/about-alsaaleak.png",
     "webring.md",
     "posts/Untitled",
     "Untitled.md",
@@ -254,9 +255,6 @@
     "stories/خبر متسلق الروابي",
     "stories/1",
     "stories/مجلد بدون عنوان/index.md",
-    "stories/خبر  متسلق الروابي.md",
-    "stories/مجلد بدون عنوان/خبر  متسلق الروابي.md",
-    "stories/مجلد بدون عنوان",
-    "about.md"
+    "stories/خبر  متسلق الروابي.md"
   ]
 }
